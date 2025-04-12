@@ -10,7 +10,20 @@ namespace inf2_basics {
 /// zurückgegeben.
 size_t find_string(std::vector<std::string> v, std::string s) {
   int result = 0;
-  // TODO
+  if (v.size()==0)
+  {
+    return 0;
+  }
+  for (size_t i = 0; i < v.size(); i++)
+  {
+    if (v[i][0]==s[0])
+    {
+      return i;
+    }
+    
+  }
+  
+  
   return v.size();
 }
 
